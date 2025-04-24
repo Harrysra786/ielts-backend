@@ -19,3 +19,4 @@
   "scripts": {
     "start": "bun run server.js"
 }
+}
