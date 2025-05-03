@@ -325,7 +325,7 @@ app.post('/api/transcriber', upload.array('images', 3), async (req, res) => {
         const fixedQuestion = "Output a transcription of this handwritten text. Do not make any grammatical corrections from your side. However, do insert any missing punctuations. Your output is going to be a single block of text of 4 or 5 paragraphs separated by a blank line (line breaks).";
 
         const payload = {
-            model: "microsoft/phi-3.5-mini-128k-instruct", // Or appropriate vision model if needed
+            model: "meta-llama/llama-4-maverick:free", // Or appropriate vision model if needed
             messages: [
                 {
                     role: "user",
